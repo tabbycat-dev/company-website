@@ -9,7 +9,7 @@ import crown from "../../img/crown.png";
 import FloatinDiv from "../FloatingDiv/FloatingDiv";
 import Github from "../../img/github.png";
 import LinkedIn from "../../img/linkedin.png";
-import Instagram from "../../img/instagram.png";
+import Facebook from "../../img/Facebook.png";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
@@ -27,30 +27,30 @@ const Intro = () => {
       <div className="i-left">
         <div className="i-name">
           {/* yahan change hy darkmode ka */}
-          <span style={{ color: darkMode ? "white" : "" }}>Hy! I Am</span>
-          <span>Andrew Thomas</span>
+          <span style={{ color: darkMode ? "white" : "" }}>Mỹ Bình</span>
+          <span>Quần áo trẻ em sỉ và lẻ</span>
           <span>
             Frontend Developer with high level of experience in web designing
             and development, producting the Quality work
           </span>
         </div>
         <Link to="contact" smooth={true} spy={true}>
-          <button className="button i-button">Hire me</button>
+          <button className="button i-button">Liên hệ</button>
         </Link>
         {/* social icons */}
         <div className="i-icons">
           <img src={Github} alt="" />
           <img src={LinkedIn} alt="" />
-          <img src={Instagram} alt="" />
+            <img src={Facebook} alt="" />
         </div>
       </div>
       {/* right image side */}
       <div className="i-right">
         <img src={Vector1} alt="" />
         <img src={Vector2} alt="" />
-        <img src={boy} alt="" />
-        {/* animation */}
-        <motion.img
+        {/* <img src={boy} alt="" /> */}
+        <img src="https://i.ibb.co/m9gKmj1/rsz-1png-image-3d230c9823cf-1.png" alt="rsz-1png-image-3d230c9823cf-1" border="0" />
+          <motion.img
           initial={{ left: "-36%" }}
           whileInView={{ left: "-24%" }}
           transition={transition}
@@ -60,11 +60,11 @@ const Intro = () => {
 
         <motion.div
           initial={{ top: "-4%", left: "74%" }}
-          whileInView={{ left: "68%" }}
+          whileInView={{ left: "5%" }}
           transition={transition}
           className="floating-div"
         >
-          <FloatinDiv img={crown} text1="Web" text2="Developer" />
+          <FloatinDiv img={crown} text1="Mẫu mới" text2="đẹp" />
         </motion.div>
 
         {/* animation */}
@@ -75,7 +75,7 @@ const Intro = () => {
           className="floating-div"
         >
           {/* floatinDiv mein change hy dark mode ka */}
-          <FloatinDiv img={thumbup} text1="Best Design" text2="Award" />
+          <FloatinDiv img={thumbup} text1="Mua sỉ" text2="giá tốt" />
         </motion.div>
 
         <div className="blur" style={{ background: "rgb(238 210 255)" }}></div>
